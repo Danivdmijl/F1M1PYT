@@ -1,5 +1,6 @@
 from array import *
 import time
+import os
 
 while True:
 
@@ -8,25 +9,43 @@ while True:
     shop = []
 
     print("Fabriek:", factory)
+    print("Verdeling", distribution)
+    print("Winkel:", shop)
+    time.sleep(1)
+    os.system('cls')
     popped_from_factory = factory.pop(0)
     distribution.append(popped_from_factory)
-    time.sleep(1)
+    os.system('cls')
     print("Fabriek:", factory)
+    print("Verdeling", distribution)
+    print("Winkel:", shop)
 
     time.sleep(1)
+    os.system('cls')
 
-    print("Verdeling:", distribution)
+    print("Fabriek:", factory)
+    print("Verdeling", distribution)
+    print("Winkel:", shop)
     popped_from_distribution = distribution.pop(0)
     shop.append(popped_from_distribution)
     time.sleep(1)
-    print("Verdeling:", distribution)
+    os.system('cls')
+    print("Fabriek:", factory)
+    print("Verdeling", distribution)
+    print("Winkel:", shop)
 
     time.sleep(1)
+    os.system('cls')
 
+    print("Fabriek:", factory)
+    print("Verdeling", distribution)
     print("Winkel:", shop)
     popped_from_shop = shop.pop(0)
     
     time.sleep(1)
+    os.system('cls')
+    print("Fabriek:", factory)
+    print("Verdeling", distribution)
     print("Winkel:", shop)
     time.sleep(1)
 
